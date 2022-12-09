@@ -36,24 +36,8 @@ ul {
     margin-left: auto;
 }
 
-body button:hover,
-body button:focus {
-    background-color: #188ce8;
-    color: #2196f3;
-    cursor: pointer;
-}
-
-.navigation-link:hover,
-.navigation-link:focus {
-    color: #2196f3;
-}
-
-
 /* Хедер */
 
-/* ЛОГОТИП - МЕНЮ */
-
-/* Сині букви логотипу*/
 .logo {
     font-family: 'Raleway';
     color: #2196F3;
@@ -124,6 +108,11 @@ body button:focus {
     padding-bottom: 24px;
 }
 
+.navigation-link:hover,
+.navigation-link:focus {
+    color: #2196f3;
+}
+
 .navigation-link {
     color: #212121;
     width: 72px;
@@ -133,9 +122,6 @@ body button:focus {
     line-height: 0, 87;
     letter-spacing: 0.02em;
     position: relative;
-}
-
-.navigation-link {
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -208,12 +194,23 @@ body button:focus {
 .mail-list,
 .phone-list {
     display: flex;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .mail-list:hover,
 .mail-list:focus {
     cursor: pointer;
     color: #2196f3;
+}
+
+.mail-list:hover .mail-icon,
+.mail-list:focus .mail-icon {
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mail-list:hover .mail-icon,
@@ -236,6 +233,13 @@ body button:focus {
 .phone-list:focus {
     cursor: pointer;
     color: #2196f3;
+}
+
+.phone-list:hover .phone-icon,
+.phone-list:focus .phone-icon {
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .phone-list:hover .phone-icon,
@@ -284,7 +288,16 @@ body button:focus {
     border: 0;
     border-radius: 4px;
     padding: 0;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+body button:hover,
+body button:focus {
+    background-color: #188ce8;
+    color: #2196f3;
+    cursor: pointer;
 }
 
 .backdrop {
@@ -316,6 +329,7 @@ body button:focus {
     background-color: #ffffff;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     border-radius: 4px;
     top: 50%;
     left: 50%;
@@ -337,6 +351,12 @@ body button:focus {
     background-color: #ffffff;
     border: 1px solid rgba(0, 0, 0, 0.1);
     cursor: pointer;
+}
+
+.modal-close-button:hover {
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close-button:hover {
@@ -465,10 +485,11 @@ body button:focus {
 
 .team-card-background {
     background-color: #FFFFFF;
-    /* padding-bottom: 30px; */
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .team-card-list {
@@ -514,7 +535,6 @@ body button:focus {
     display: block;
     max-width: 100%;
     height: auto;
-    /* margin-bottom: 50px; */
 }
 
 /* Іконки соцмереж */
@@ -541,6 +561,12 @@ body button:focus {
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    transition-property: background-color;
+    transition-property: border-radius;
+    transition-property: cursor;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .social-icon {
@@ -553,6 +579,13 @@ body button:focus {
     border-radius: 50%;
     cursor: pointer;
 }
+
+.social-link .social-icon,
+.social-link .social-icon {
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
 
 .social-link:hover .social-icon,
 .social-link:focus .social-icon {
@@ -594,6 +627,9 @@ body button:focus {
     background-position: center;
     background-size: 106px;
     background-repeat: no-repeat;
+    transition-property: border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-after-items:hover,
@@ -608,6 +644,9 @@ body button:focus {
     align-items: center;
     justify-content: center;
     fill: #afb1b8;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-link:hover,
@@ -653,6 +692,9 @@ body button:focus {
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
     font-style: normal;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mobile {
@@ -661,6 +703,9 @@ body button:focus {
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
     font-style: normal;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mobile:hover,
@@ -708,6 +753,9 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .join-item {
@@ -757,6 +805,10 @@ h2 {
     text-align: center;
     letter-spacing: 0.03em;
     border-radius: 4px;
+    transition-property: color;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfoio-button:hover,
@@ -786,6 +838,9 @@ h2 {
     padding-top: 0;
     /* padding-bottom: 30px; */
     border: 1px solid #eeeeee;
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .flex-list:hover,
@@ -816,12 +871,21 @@ h2 {
 }
 
 .portfolio-link-list {
-    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-link-list:hover,
 .portfolio-link-list:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.portfolio-link-list:hover .portfolio-desc-list,
+.portfolio-link-list:focus .portfolio-desc-list {
+    transition-property: transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-link-list:hover .portfolio-desc-list,
