@@ -49,7 +49,16 @@
             <div class="hero-box container">
                 <h1 class="hero-heading">Ефективні рішення для</br>
                     вашого бізнесу</h1>
-                <button class="button" type="button"><span class="text-button">Замовити послугу</span></button>
+                <button class="button" data-modal-open type="button"><span class="text-button">Замовити послугу</span></button>
+                <div class="backdrop is-hidden" data-modal>
+                    <div class="modal is-hidden">
+                        <button class =" close-modal-btn " data-modal-close>
+                            <svg class="modal-close-button" width="18" height="18">
+                                <use href="./images/modalclose.svg#icon-close-black"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
             </div>
         </section>
         <!-- Переваги -->
@@ -382,6 +391,7 @@
             </div>
         </div>
     </footer>
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
